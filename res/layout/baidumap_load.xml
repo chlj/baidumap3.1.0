@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        style="@style/top_background_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/title_text"
+            style="@style/top_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载一张百度地图" />
+
+        <Button
+            android:id="@+id/back"
+            style="@style/top_btnBack_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linpubset"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="普通图" />
+
+            <RadioButton
+                android:id="@+id/statellite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="卫星图" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/traffice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="交通图" />
+    </LinearLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+         />
+
+</LinearLayout>

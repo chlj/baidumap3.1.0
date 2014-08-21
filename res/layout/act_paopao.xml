@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/lay_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_map_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/img_info"
+            android:text="123456" />
+
+        <ImageView
+            android:id="@+id/img_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/txt_map_info"
+            android:gravity="center"
+            android:src="@drawable/mylocation_detail" />
+
+        <TextView
+            android:id="@+id/txt_map_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="详情"
+            android:textColor="#0084FC" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_1"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_map_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="距我4.1km  |" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广西南宁市河堤路85号" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/lay_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_2"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜周边" >
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="到这去" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

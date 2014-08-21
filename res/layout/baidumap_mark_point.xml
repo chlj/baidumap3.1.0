@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        style="@style/top_background_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/title_text"
+            style="@style/top_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载一张百度地图" />
+
+        <Button
+            android:id="@+id/back"
+            style="@style/top_btnBack_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/id_marker_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <include layout="@layout/act_paopao" />
+    </RelativeLayout>
+
+</RelativeLayout>

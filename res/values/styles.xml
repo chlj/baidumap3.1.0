@@ -1,0 +1,41 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    	<style name="top_background_style">
+	    <item name="android:background">@drawable/index_title</item>
+	</style>
+	<style name="top_title_style">
+	    <item name="android:layout_centerInParent">true</item>
+	    <item name="android:textSize">@dimen/textsize_20</item>
+	    <item name="android:textColor">#ffffff</item>
+	</style>
+	<style name="top_btnBack_style">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/pixels_5</item>
+        <item name="android:background">@drawable/exit</item>
+        <item name="android:text">返回</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/textsize_16</item>
+    </style>
+        <style name="mystyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+</resources>
